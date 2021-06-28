@@ -1,7 +1,7 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showNumber(Höhe)
+    basic.showNumber(Fallhöhe)
 })
-let Höhe = 0
+let Fallhöhe = 0
 let Beschleunigung = 0
 basic.showString("Init")
 for (let index = 0; index < 300; index++) {
@@ -17,6 +17,6 @@ while (input.acceleration(Dimension.Strength) < 1500) {
 }
 let Ende = input.runningTime()
 let Fallzeit = (Ende - Start) / 1000
-Höhe = 0.5 * 9.81 * Fallzeit * Fallzeit
+Fallhöhe = 0.5 * 9.81 * Fallzeit * Fallzeit
 basic.setLedColor(0xff0000)
 basic.pause(1000)
